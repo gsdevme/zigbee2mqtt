@@ -1,0 +1,5 @@
+mosquitto/
+data/database.db
+data/log*
+data/state.json
+data/coordinator_backup.json
