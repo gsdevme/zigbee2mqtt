@@ -24,3 +24,15 @@ mqtt:
 serial:
   # Location of CC2531 USB sniffer
   port: /dev/ttyACM0
+
+advanced:
+  # Optional: ZigBee channel, changing requires re-pairing of all devices. (Note: use a ZLL channel: 11, 15, 20, or 25 to avoid Problems)
+  # (default: 11)
+  channel: 11
+  # Optional: Logging level, options: debug, info, warn, error (default: info)
+  log_level: info
+  log_rotation: true
+  # Optional: Output location of the log (default: shown below), leave empty to supress logging (log_output: [])
+  # possible options: 'console', 'file', 'syslog'
+  log_output:
+    - console
