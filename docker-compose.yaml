@@ -4,6 +4,8 @@ services:
     container_name: zigbee2mqtt
     image: koenkk/zigbee2mqtt:1.17.0
     restart: always
+    labels:
+      "autoheal": "true"
     healthcheck:
       test: [ "CMD", "echo", "-n", ">", "/dev/tcp/127.0.0.1/8080" ]
       interval: 30s
@@ -25,6 +27,8 @@ services:
     container_name: mqtt
     image: eclipse-mosquitto:latest
     restart: always
+    labels:
+      "autoheal": "true"
     healthcheck:
       test: [ "CMD", "echo", "-n", ">", "/dev/tcp/127.0.0.1/1883" ]
       interval: 30s
@@ -36,3 +40,17 @@ services:
     ports:
       - "1883:1883"
       - "9001:9001"
+
+  autoheal:
+    image: willfarrell/autoheal
+    container_name: autoheal
+    depends_on:
+      mqtt:
+        condition: service_healthy
+      zigbee2mqtt:
+        condition: service_healthy
+    volumes:
+      - '/var/run/docker.sock:/var/run/docker.sock'
+    environment:
+      - AUTOHEAL_INTERVAL=10
+      - CURL_TIMEOUT=30
