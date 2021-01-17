@@ -3,6 +3,7 @@ services:
   zigbee2mqtt:
     container_name: zigbee2mqtt
     image: koenkk/zigbee2mqtt:1.17.0
+    hostname: zigbee2mqtt
     restart: always
     labels:
       "autoheal": "true"
@@ -25,6 +26,7 @@ services:
       - TZ=Europe/London
   mqtt:
     container_name: mqtt
+    hostname: mqtt
     image: eclipse-mosquitto:latest
     restart: always
     labels:
@@ -44,6 +46,7 @@ services:
   autoheal:
     image: willfarrell/autoheal
     container_name: autoheal
+    hostname: autoheal
     depends_on:
       mqtt:
         condition: service_healthy
