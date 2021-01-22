@@ -4,3 +4,5 @@ data/database.db
 data/log*
 data/state.json
 data/coordinator_backup.json
+data/secret.yaml
+data/*.backup
