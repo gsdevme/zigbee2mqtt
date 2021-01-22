@@ -1,4 +1,5 @@
-mosquitto/
+mosquitto/data
+mosquitto/logs
 data/database.db
 data/log*
 data/state.json
