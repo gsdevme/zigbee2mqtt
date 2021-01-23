@@ -1,5 +1,5 @@
 homeassistant: false
-permit_join: true
+permit_join: false
 frontend:
   port: 8080
   host: 0.0.0.0
@@ -12,7 +12,7 @@ advanced:
   network_key: '!secret network_key'
   availability_timeout: 60
   channel: 11
-  log_level: info
+  log_level: error
   log_rotation: true
   log_output:
     - console
