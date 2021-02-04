@@ -5,19 +5,23 @@ frontend:
   host: 0.0.0.0
 mqtt:
   base_topic: zigbee2mqtt
-  server: 'mqtt://localhost'
+  server: 'mqtt://broker'
 serial:
   port: /dev/ttyACM0
 advanced:
   network_key: '!secret network_key'
-  availability_timeout: 60
+  availability_timeout: 120
   channel: 11
-  log_level: error
-  log_rotation: true
+  log_level: info
+  log_rotation: false
   log_output:
     - console
 devices:
-  '0x0017880108d97eab':
-    friendly_name: '0x0017880108d97eab'
   '0x00178801032b00f9':
     friendly_name: '0x00178801032b00f9'
+  '0x00124b002268817a':
+    friendly_name: '0x00124b002268817a'
+  '0x0017880108d97eab':
+    friendly_name: '0x0017880108d97eab'
+  '0x00124b0022697246':
+    friendly_name: '0x00124b0022697246'
