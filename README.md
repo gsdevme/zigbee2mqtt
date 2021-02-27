@@ -1,26 +1,25 @@
 # zigbee2mqtt deployment
 
-This repository represents a deployment of [zigbee2mqtt](https://www.zigbee2mqtt.io/) & mqtt on a Raspberry Pi v3 B
+This repository represents a deployment of [zigbee2mqtt](https://www.zigbee2mqtt.io/) & mqtt on a Orange Pi Zero LTS
+
+![image](https://user-images.githubusercontent.com/319498/109385440-bdafe100-78eb-11eb-8f8e-38ec95ad9293.png)
+
 
 # install
 
 ```bash
-sudo apt update
-sudo apt upgrade -y
+apt update
+apt upgrade -y
 
-sudo hostnamectl set-hostname zigbee2mqtt.local
+hostnamectl set-hostname zigbee-orange-pi
 
-# Reduce the GPU memory to 16mb
-sudo raspi-config nonint do_memory_split 16
-
-sudo apt install git zip unzip curl vim -y
+apt install git zip unzip curl vim -y
 
 curl -fsSL https://get.docker.com -o get-docker.sh | sudo sh ./get-docker.sh
 
-sudo apt install docker-compose -y
+apt install docker-compose -y
 
-sudo apt install unattended-upgrades -y
+apt install unattended-upgrades -y
 
-sudo dpkg-reconfigure --priority=low unattended-upgrades
-
+dpkg-reconfigure --priority=low unattended-upgrades
 ```
