@@ -1,6 +1,6 @@
 # zigbee2mqtt deployment
 
-This repository represents a deployment of [zigbee2mqtt](https://www.zigbee2mqtt.io/) & mqtt on a Orange Pi Zero LTS
+This repository represents a deployment of [zigbee2mqtt](https://www.zigbee2mqtt.io/) & mqtt on a Orange Pi Zero LTS powered by a POE splitter 
 
 ![image](https://user-images.githubusercontent.com/319498/109385440-bdafe100-78eb-11eb-8f8e-38ec95ad9293.png)
 
