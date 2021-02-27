@@ -44,11 +44,12 @@ services:
       - ./mosquitto:/mosquitto
     ports:
       - "1883:1883"
-      - "9001:9001"
+      - 9001
 
   autoheal:
     image: willfarrell/autoheal
     container_name: autoheal
+    restart: on-failure
     depends_on:
       - broker
       - zigbee2mqtt

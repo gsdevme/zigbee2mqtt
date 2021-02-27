@@ -1,4 +1,4 @@
-homeassistant: false
+homeassistant: true
 permit_join: false
 frontend:
   port: 8080
@@ -18,10 +18,10 @@ advanced:
     - console
 devices:
   '0x00178801032b00f9':
-    friendly_name: '0x00178801032b00f9'
+    friendly_name: test-hue-sensor-2
   '0x00124b002268817a':
-    friendly_name: '0x00124b002268817a'
+    friendly_name: test
   '0x0017880108d97eab':
-    friendly_name: '0x0017880108d97eab'
+    friendly_name: office-light
   '0x00124b0022697246':
-    friendly_name: '0x00124b0022697246'
+    friendly_name: downstairs-cupboard-door
