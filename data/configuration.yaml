@@ -19,9 +19,59 @@ advanced:
 devices:
   '0x00178801032b00f9':
     friendly_name: test-hue-sensor-2
-  '0x00124b002268817a':
-    friendly_name: test
   '0x0017880108d97eab':
     friendly_name: office-light
   '0x00124b0022697246':
     friendly_name: downstairs-cupboard-door
+  '0x00178801026fe7dc':
+    friendly_name: landing-light
+  '0x0017880108d97bbe':
+    friendly_name: hall-light
+  '0x0017880106f6609e':
+    friendly_name: landing-sensor-bookcase
+  '0x00178801020074d0':
+    friendly_name: landing-sensor
+  '0x0017880103299924':
+    friendly_name: hall-sensor
+  '0x00178801026d1d46':
+    friendly_name: upstairs-cupboard
+  '0x00178801027958a0':
+    friendly_name: master-bedroom-light
+  '0x001788010244b8cb':
+    friendly_name: spare-bedroom-light
+  '0x0017880103caf5b1':
+    friendly_name: master-bedroom-switch
+  '0x0017880104ae68ae':
+    friendly_name: spare-bedroom-switch
+  '0x00178801032b67b4':
+    friendly_name: rack-sensor
+  '0x0017880106f64f06':
+    friendly_name: master-bedroom-sensor
+  '0x001788010911a83d':
+    friendly_name: living-room-light-strip
+  '0x00178801042fabc7':
+    friendly_name: living-room-playbar
+  '0x0017880102795f90':
+    friendly_name: living-room-light
+  '0x00178801026fd050':
+    friendly_name: downstairs-cupboard-light
+  '0x00178801081bfca7':
+    friendly_name: living-room-lamp
+  '0x001788010440a845':
+    friendly_name: outside-light
+  '0x0017880103caf5b0':
+    friendly_name: living-room-switch
+  '0x0017880104ae6a0e':
+    friendly_name: kitchen-switch
+  '0x0017880102035a66':
+    friendly_name: kitchen-front-sensor
+  '0x00178801032abd5e':
+    friendly_name: kitchen-rear-sensor
+  '0x90fd9ffffe172403':
+    friendly_name: kitchen-light-strip
+  '0x001788010337a206':
+    friendly_name: kitchen-rear-light
+  '0x001788010337a2c1':
+    friendly_name: kitchen-front-light
+  '0x001788010646f71f':
+    friendly_name: outside-sensor
