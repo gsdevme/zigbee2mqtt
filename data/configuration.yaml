@@ -18,7 +18,7 @@ advanced:
     - console
 devices:
   '0x00178801032b00f9':
-    friendly_name: test-hue-sensor-2
+    friendly_name: spare-bedroom-sensor
   '0x0017880108d97eab':
     friendly_name: office-light
   '0x00124b0022697246':
@@ -75,3 +75,5 @@ devices:
     friendly_name: kitchen-front-light
   '0x001788010646f71f':
     friendly_name: outside-sensor
+  '0x00124b002268817a':
+    friendly_name: office-sensor
