@@ -2,7 +2,7 @@ version: "2.4"
 services:
   zigbee2mqtt:
     container_name: zigbee2mqtt
-    image: koenkk/zigbee2mqtt:1.17.0
+    image: koenkk/zigbee2mqtt:1.18.0
     restart: always
     labels:
       "autoheal": "true"
