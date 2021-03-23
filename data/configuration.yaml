@@ -68,7 +68,7 @@ devices:
   '0x00178801032abd5e':
     friendly_name: kitchen-rear-sensor
   '0x90fd9ffffe172403':
-    friendly_name: kitchen-light-strip
+    friendly_name: kitchen-light-strip-old
   '0x001788010337a206':
     friendly_name: kitchen-rear-light
   '0x001788010337a2c1':
@@ -77,3 +77,9 @@ devices:
     friendly_name: outside-sensor
   '0x00124b002268817a':
     friendly_name: office-sensor
+  '0x5c0272fffe73fbf1':
+    friendly_name: kitchen-light-strip
+  '0x5c0272fffeceaaab':
+    friendly_name: alarm
+  '0x14b457fffe4b1026':
+    friendly_name: office-monitors
